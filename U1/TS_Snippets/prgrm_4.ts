@@ -1,11 +1,11 @@
-let a:number = 10;
-let b:number =20;
+let c:number = 10;
+let d:number =20;
 
-let add= a+b;
-let sub= a-b;
-let mul= a*b;
-let div= a/b;
-let mod= a%b;
+let add= c+d;
+let sub= c-d;
+let mul= c*d;
+let div= c/d;
+let mod= c%d;
 
 console.log("Addition =",add);
 console.log("Subtraction =",sub);
