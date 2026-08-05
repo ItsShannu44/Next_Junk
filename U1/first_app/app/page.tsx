@@ -11,18 +11,30 @@
 
 export default function Home()
 {
-  const student={
-    name: "Bob",
-    age: 26,
-    course: "MCA"
-  };
+  // const student={
+  //   name: "Bob",
+  //   age: 26,
+  //   course: "MCA"
+  // };
   
-  return(
+  // return(
+  //   <div style={{textAlign:'center', marginTop:'20vh', justifyContent:'center', backgroundColor:'grey', width:'max-content', color:'black', padding:'50px'}}>
+  //     <h2 style={{color:'blue', fontSize:'2em'}}>Student Details</h2>
+  //     <p>Name: {student.name}</p>
+  //     <p>Age: {student.age}</p>
+  //     <p>course: {student.course}</p>
+  //   </div>
+  // );
+    const number=25;
+
+
+
+    return(
     <div style={{textAlign:'center', marginTop:'20vh', justifyContent:'center', backgroundColor:'grey', width:'max-content', color:'black', padding:'50px'}}>
-      <h2>Student Details</h2>
-      <p>Name: {student.name}</p>
-      <p>Age: {student.age}</p>
-      <p>course: {student.course}</p>
+      <h2 style={{color:'blue', fontSize:'2em'}}>Even Or Odd</h2>
+      {
+        number%2===0?<p>{number} is Even</p>: <p>{number} is Odd</p>
+      }
     </div>
   );
 }
