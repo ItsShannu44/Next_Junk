@@ -26,23 +26,37 @@
   //   </div>
   // );
     // const number=25;
+// export default function Home()
+// {
+// function fact(n: number): number {
+//   if (n === 0 || n === 1) {
+//     return 1;
+//   }
+//   return n * fact(n - 1);
+// }
+
+//     return(
+//     <center>
+//     <div style={{textAlign:'center',borderRadius:'10px', marginTop:'20vh', justifyContent:'center', backgroundColor:'grey', width:'max-content', color:'black', padding:'50px'}}>
+//       <h2 style={{color:'blue', fontSize:'2em', fontWeight:'Bolder'}}>Factorial</h2>
+//       {/* {
+//         number%2===0?<p>{number} is Even</p>: <p>{number} is Odd</p>
+//       } */}
+//       <p>Factorial: {fact(5)}</p>
+//     </div>
+//     </center>
+//   );
+// }
+
 export default function Home()
 {
-function fact(n: number = 5): number {
-  if (n === 0 || n === 1) {
-    return 1;
-  }
-  return n * fact(n - 1);
-}
+  const x: number[]=[10, 20, 30, 40, 50]
 
     return(
     <center>
     <div style={{textAlign:'center',borderRadius:'10px', marginTop:'20vh', justifyContent:'center', backgroundColor:'grey', width:'max-content', color:'black', padding:'50px'}}>
       <h2 style={{color:'blue', fontSize:'2em', fontWeight:'Bolder'}}>Factorial</h2>
-      {/* {
-        number%2===0?<p>{number} is Even</p>: <p>{number} is Odd</p>
-      } */}
-      <p>Factorial: {fact(4)}</p>
+      <p>Array Elements: {x.join(" ")} </p>
     </div>
     </center>
   );
