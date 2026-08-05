@@ -30,11 +30,13 @@ export default function Home()
 
 
     return(
-    <div style={{textAlign:'center', marginTop:'20vh', justifyContent:'center', backgroundColor:'grey', width:'max-content', color:'black', padding:'50px'}}>
-      <h2 style={{color:'blue', fontSize:'2em'}}>Even Or Odd</h2>
+    <center>
+    <div style={{textAlign:'center',borderRadius:'10px', marginTop:'20vh', justifyContent:'center', backgroundColor:'grey', width:'max-content', color:'black', padding:'50px'}}>
+      <h2 style={{color:'blue', fontSize:'2em', fontWeight:'Bolder'}}>Even Or Odd</h2>
       {
         number%2===0?<p>{number} is Even</p>: <p>{number} is Odd</p>
       }
     </div>
+    </center>
   );
 }
