@@ -339,37 +339,65 @@
 // }
 
 
+// export default function Home() {
+
+//   function reverseArray(arr: number[]): number[] {
+//     let reversed: number[] = [];
+
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//       reversed.push(arr[i]);
+//     }
+
+//     return reversed;
+//   }
+
+//   const numbers = [10, 20, 30, 40, 50];
+//   const reversedNumbers = reverseArray(numbers);
+
+//   return (
+//     <center>
+//       <div style={{textAlign:'center',borderRadius:'10px', marginTop:'20vh', justifyContent:'center', backgroundColor:'black', width:'max-content', color:'black', padding:'50px'}}>
+//         <h2
+//           style={{
+//             color: "darkgreen",
+//             fontSize: "2em",
+//             fontWeight: "bold",
+//           }}
+//         >
+//           Reverse an Array
+//         </h2>
+
+//         <p style={{color:'white'}}>Original Array: {numbers.join(", ")}</p>
+//         <p style={{color:'white'}}>Reversed Array: {reversedNumbers.join(", ")}</p>
+//       </div>
+//     </center>
+//   );
+// }
+
+
+
 export default function Home() {
-
-  function reverseArray(arr: number[]): number[] {
-    let reversed: number[] = [];
-
-    for (let i = arr.length - 1; i >= 0; i--) {
-      reversed.push(arr[i]);
-    }
-
-    return reversed;
+interface Student{
+  srn: string;
+  name:string;
+  age:number;
+  branch: string;
+}
+  const student: Student= {
+    srn: "UX090",
+    name: "Alex",
+    age: 22,
+    branch:"Computer Science"
   }
 
-  const numbers = [10, 20, 30, 40, 50];
-  const reversedNumbers = reverseArray(numbers);
-
-  return (
+  return(
     <center>
-      <div style={{textAlign:'center',borderRadius:'10px', marginTop:'20vh', justifyContent:'center', backgroundColor:'black', width:'max-content', color:'black', padding:'50px'}}>
-        <h2
-          style={{
-            color: "darkgreen",
-            fontSize: "2em",
-            fontWeight: "bold",
-          }}
-        >
-          Reverse an Array
-        </h2>
-
-        <p style={{color:'white'}}>Original Array: {numbers.join(", ")}</p>
-        <p style={{color:'white'}}>Reversed Array: {reversedNumbers.join(", ")}</p>
-      </div>
+    <div style={{borderRadius:'10px', marginTop:'20vh', justifyContent:'center', backgroundColor:'black', width:'max-content', color:'black', padding:'50px'}}>
+        <h3 style={{color:'white'}}>SRN: {student.srn}</h3>
+        <h3 style={{color:'white'}}>Name: {student.name}</h3>
+        <h3 style={{color:'white'}}>Age: {student.age}</h3>
+        <h3 style={{color:'white'}}>Branch: {student.branch}</h3>
+    </div>
     </center>
-  );
+  )
 }
