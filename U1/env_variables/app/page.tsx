@@ -1,5 +1,3 @@
-// import Image from "next/image";
-
 export default function Home() {
 const appName= process.env.APP_NAME;
 const apiUrl = process.env.API_URL;
