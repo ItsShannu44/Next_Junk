@@ -1,7 +1,9 @@
-import Image from "next/image";
+// import Image from "next/image";
+
 import About from "./about/about";
 import Contact from "./contact/contact";
-
+import Loading from "./loading";
+import "./globals.css";
 export default function Home() {
   return (
     <div>
@@ -9,6 +11,7 @@ export default function Home() {
       <p>This is home page of file based routing app.</p>
       <About /><br></br>
       <Contact/>
+      <Loading/>
     </div>
   );
 }
