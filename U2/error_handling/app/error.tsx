@@ -15,7 +15,7 @@ async function getStudents(){
         <div>
             <h1>Students</h1>
             {students.map((student: any)=>(
-                
+             <p key={student.id}>{student.name}</p>
             ))}
         </div>
     )
