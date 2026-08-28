@@ -1,12 +1,9 @@
-import Image from "next/image";
-import NotFound from "./about/not-found";
-import Error from "./about/error";
+import StudentPage from "./student/page";
 
 export default function Home() {
   return (
     <div>
-      <NotFound/>
-      <Error/>
+      <StudentPage />
     </div>
   );
 }
