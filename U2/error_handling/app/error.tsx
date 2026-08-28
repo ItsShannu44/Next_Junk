@@ -1,4 +1,3 @@
-
 async function getStudents(){
     const response = await fetch(
         "https://example.com/api/students"
