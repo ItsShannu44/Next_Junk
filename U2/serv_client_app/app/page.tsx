@@ -1,9 +1,11 @@
-import Image from "next/image";
 import Counter from "./client-comp/page";
-
+import UsersPage from "./server-comp/page";
 
 export default function Home() {
   return (
-    <Counter/>
+    <div>
+      <Counter />
+      <UsersPage />
+    </div>
   );
 }
