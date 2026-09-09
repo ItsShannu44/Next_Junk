@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Num from "./Client_Error/number/page";
+import UsersPage from "./SSR/page";
 export default function Home() {
   return (
     <div>
@@ -8,7 +9,9 @@ export default function Home() {
       <Link href="/nested/electronics/123">
         View Product
       </Link> */}
-      <Num/>
+      {/* <Num/> */}
+
+      <UsersPage/>
     </div>
   );
 }
