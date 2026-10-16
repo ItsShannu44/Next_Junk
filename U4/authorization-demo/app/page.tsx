@@ -13,6 +13,7 @@ export default function Home() {
 
           await signIn("credentials", {
             username: formData.get("username"),
+            email: formData.get("email"),
             password: formData.get("password"),
             redirectTo: "/student",
           });
@@ -26,7 +27,14 @@ export default function Home() {
         />
 
         <br /><br />
-
+        
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+<br /><br />
         <input
           type="password"
           name="password"
